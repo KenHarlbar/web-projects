@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'ubunturegular';
+    src: url('webfontkit/ubuntu-regular-webfont.woff') format('woff'),
+         url('webfontkit/ubuntu-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'ubunturegular';
+    color: #000;
+    background-color: #fff;
+    font-size: 16px;
+    padding: 0;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+.header {
+    padding: 30px 50px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+.header .logo {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.header .logo h2 {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-bar {
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-bar ul{
+    display: flex;
+    align-items: center;
+    
+}
+
+.nav-bar ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.nav-bar ul li a:hover {
+    color: #000;
+}

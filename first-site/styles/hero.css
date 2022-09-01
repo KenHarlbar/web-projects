@@ -1,0 +1,73 @@
+.hero {
+    display: grid;
+    grid-template-areas:
+        "hero-text hero-image";
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 100px;
+    padding: 50px;
+}
+
+.hero .hero-text {
+    grid-area: hero-text;
+}
+
+.hero .hero-text .head {
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero .hero-text .caption {
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.hero .hero-text .buttons {
+    display: flex;
+    margin-top: 30px;
+}
+
+.hero .hero-text .buttons .get-started {
+    padding: 10px 50px;
+    cursor: pointer;
+    background-color: #fff;
+    border: none;
+    box-shadow: 12px 12px 20px 10px #f3f5ff;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'ubunturegular';
+}
+
+.hero .hero-text .buttons .get-started:hover {
+    box-shadow: 12px 12px 10px 5px #f3f5ff;
+    padding: 12px 55px;
+    transition: all 0.5s ease-in-out;
+}
+
+.hero .hero-text .buttons .watch {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    font-family: 'ubunturegular';
+    display: flex;
+    align-items: center;
+}
+
+.hero .hero-text .buttons .watch img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.hero .hero-text .buttons .watch span {
+    text-decoration: underline;
+    color: #ccd5ec;
+}
+
+.hero .hero-image {
+    grid-area: hero-image;
+    background: url('../images/hero-image.jpg') no-repeat center center;
+    background-size: contain;
+}
